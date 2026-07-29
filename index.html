@@ -418,6 +418,59 @@
     }
     .service-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.65; }
 
+    /* ── 專業機台 ── */
+    #equipment {
+      background: linear-gradient(180deg, transparent 0%, rgba(26,61,110,0.08) 50%, transparent 100%);
+    }
+    .equipment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .equipment-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      transition: all var(--transition);
+    }
+    .equipment-card:hover { border-color: var(--accent); transform: translateY(-6px); }
+    .equipment-icon { font-size: 2.2rem; margin-bottom: 16px; display: block; }
+    .equipment-title { font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+    .equipment-desc { font-size: 0.86rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── 客戶樣品 ── */
+    #samples {
+      background: linear-gradient(180deg, rgba(0,180,216,0.03) 0%, transparent 100%);
+    }
+    .samples-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .sample-card {
+      aspect-ratio: 1;
+      border: 1px dashed var(--card-border);
+      border-radius: var(--radius);
+      background: var(--card-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--text-muted);
+      transition: border-color var(--transition), transform var(--transition);
+      overflow: hidden;
+    }
+    .sample-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .sample-card img { width: 100%; height: 100%; object-fit: cover; }
+    .sample-icon { font-size: 1.8rem; }
+    .sample-label { font-size: 0.78rem; letter-spacing: 0.5px; }
+
     /* ── 聯絡我們 ── */
     #contact {
       background: linear-gradient(135deg, rgba(26,61,110,0.1) 0%, transparent 80%);
@@ -528,6 +581,8 @@
       <li><a href="#info">公司資訊</a></li>
       <li><a href="#about">關於我們</a></li>
       <li><a href="#services">服務項目</a></li>
+      <li><a href="#equipment">專業機台</a></li>
+      <li><a href="#samples">客戶樣品</a></li>
       <li><a href="#contact">聯絡我們</a></li>
     </ul>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="選單">
@@ -684,6 +739,70 @@
         <div class="service-title">印前設計諮詢</div>
         <div class="service-desc">提供專業印前文件檢查、色彩校正、設計優化建議，確保最終成品完美呈現，降低修改成本。</div>
       </div>
+    </div>
+  </section>
+
+  <!-- ── 專業機台 ── -->
+  <section id="equipment">
+    <div class="section-header reveal">
+      <span class="section-label">Our Equipment</span>
+      <h2 class="section-title">專業機台設備</h2>
+      <div class="section-divider"></div>
+      <p class="section-sub">引進多款專業印刷設備，從印刷、加工到裁切一次到位，確保每件成品的品質與效率</p>
+    </div>
+    <div class="equipment-grid">
+      <div class="equipment-card reveal delay-1">
+        <span class="equipment-icon">🖨️</span>
+        <div class="equipment-title">五色UV印刷機</div>
+        <div class="equipment-desc">高速五色UV印刷設備，色彩飽和穩定、油墨乾燥快速，適用於各類商業印刷與包裝印刷，大幅提升生產效率。</div>
+      </div>
+      <div class="equipment-card reveal delay-2">
+        <span class="equipment-icon">🖥️</span>
+        <div class="equipment-title">數位噴墨印刷機</div>
+        <div class="equipment-desc">支援少量多樣、彈性接單，快速打樣與短版印刷需求皆能靈活因應，有效縮短交期並降低成本。</div>
+      </div>
+      <div class="equipment-card reveal delay-3">
+        <span class="equipment-icon">✨</span>
+        <div class="equipment-title">自動燙金機</div>
+        <div class="equipment-desc">提供燙金、燙銀等多種特殊效果加工，位置精準、光澤細緻，為印刷品增添質感與精緻度。</div>
+      </div>
+      <div class="equipment-card reveal delay-4">
+        <span class="equipment-icon">📐</span>
+        <div class="equipment-title">全自動軋型機</div>
+        <div class="equipment-desc">採用精準軋型技術，可打造各式異形包裝與立體結構，滿足客製化包裝設計的多元需求。</div>
+      </div>
+      <div class="equipment-card reveal delay-5">
+        <span class="equipment-icon">💎</span>
+        <div class="equipment-title">UV局部上光機</div>
+        <div class="equipment-desc">局部上光工藝突顯設計重點，增加畫面層次感與觸摸質感，讓印刷品更具視覺吸引力。</div>
+      </div>
+      <div class="equipment-card reveal delay-6">
+        <span class="equipment-icon">✂️</span>
+        <div class="equipment-title">高精度裁切機</div>
+        <div class="equipment-desc">高速精準裁切系統，確保成品尺寸一致、邊緣工整，有效提升生產效率與產品良率。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 客戶樣品 ── -->
+  <section id="samples">
+    <div class="section-header reveal">
+      <span class="section-label">Customer Samples</span>
+      <h2 class="section-title">客戶樣品實績</h2>
+      <div class="section-divider"></div>
+      <p class="section-sub">實際印刷成品案例展示，如需替換為客戶樣品照片，請將 .sample-card 內容替換為 &lt;img src="樣品圖片路徑" alt="樣品說明"&gt;</p>
+    </div>
+    <div class="samples-grid">
+      <div class="sample-card reveal delay-1"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 01</span></div>
+      <div class="sample-card reveal delay-2"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 02</span></div>
+      <div class="sample-card reveal delay-3"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 03</span></div>
+      <div class="sample-card reveal delay-4"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 04</span></div>
+      <div class="sample-card reveal delay-5"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 05</span></div>
+      <div class="sample-card reveal delay-6"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 06</span></div>
+      <div class="sample-card reveal delay-1"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 07</span></div>
+      <div class="sample-card reveal delay-2"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 08</span></div>
+      <div class="sample-card reveal delay-3"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 09</span></div>
+      <div class="sample-card reveal delay-4"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 10</span></div>
     </div>
   </section>
 
