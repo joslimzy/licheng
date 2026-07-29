@@ -450,22 +450,14 @@
     }
     .sample-card {
       aspect-ratio: 1;
-      border: 1px dashed var(--card-border);
+      border: 1px solid var(--card-border);
       border-radius: var(--radius);
       background: var(--card-bg);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--text-muted);
       transition: border-color var(--transition), transform var(--transition);
       overflow: hidden;
     }
     .sample-card:hover { border-color: var(--accent); transform: translateY(-4px); }
     .sample-card img { width: 100%; height: 100%; object-fit: cover; }
-    .sample-icon { font-size: 1.8rem; }
-    .sample-label { font-size: 0.78rem; letter-spacing: 0.5px; }
 
     /* ── 聯絡我們 ── */
     #contact {
@@ -837,16 +829,19 @@
       <p class="section-sub">實際印刷成品案例展示</p>
     </div>
     <div class="samples-grid">
-      <div class="sample-card reveal delay-1"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 01</span></div>
-      <div class="sample-card reveal delay-2"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 02</span></div>
-      <div class="sample-card reveal delay-3"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 03</span></div>
-      <div class="sample-card reveal delay-4"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 04</span></div>
-      <div class="sample-card reveal delay-5"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 05</span></div>
-      <div class="sample-card reveal delay-6"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 06</span></div>
-      <div class="sample-card reveal delay-1"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 07</span></div>
-      <div class="sample-card reveal delay-2"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 08</span></div>
-      <div class="sample-card reveal delay-3"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 09</span></div>
-      <div class="sample-card reveal delay-4"><span class="sample-icon">🖼️</span><span class="sample-label">樣品 10</span></div>
+      <div class="sample-card reveal delay-1"><img src="images/image%20(1).jpg" alt="客戶樣品 01" loading="lazy"></div>
+      <div class="sample-card reveal delay-2"><img src="images/image%20(2).jpg" alt="客戶樣品 02" loading="lazy"></div>
+      <div class="sample-card reveal delay-3"><img src="images/image%20(3).jpg" alt="客戶樣品 03" loading="lazy"></div>
+      <div class="sample-card reveal delay-4"><img src="images/image%20(4).jpg" alt="客戶樣品 04" loading="lazy"></div>
+      <div class="sample-card reveal delay-5"><img src="images/image%20(5).jpg" alt="客戶樣品 05" loading="lazy"></div>
+      <div class="sample-card reveal delay-6"><img src="images/image%20(6).jpg" alt="客戶樣品 06" loading="lazy"></div>
+      <div class="sample-card reveal delay-1"><img src="images/image%20(7).jpg" alt="客戶樣品 07" loading="lazy"></div>
+      <div class="sample-card reveal delay-2"><img src="images/image%20(8).jpg" alt="客戶樣品 08" loading="lazy"></div>
+      <div class="sample-card reveal delay-3"><img src="images/image%20(9).jpg" alt="客戶樣品 09" loading="lazy"></div>
+      <div class="sample-card reveal delay-4"><img src="images/image%20(10).jpg" alt="客戶樣品 10" loading="lazy"></div>
+      <div class="sample-card reveal delay-5"><img src="images/image%20(11).jpg" alt="客戶樣品 11" loading="lazy"></div>
+      <div class="sample-card reveal delay-6"><img src="images/image%20(12).jpg" alt="客戶樣品 12" loading="lazy"></div>
+      <div class="sample-card reveal delay-1"><img src="images/image%20(13).jpg" alt="客戶樣品 13" loading="lazy"></div>
     </div>
   </section>
 
