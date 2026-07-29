@@ -265,27 +265,24 @@
     #info {
       background: linear-gradient(180deg, rgba(0,180,216,0.04) 0%, transparent 100%);
     }
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
+    .info-panel {
+      max-width: 760px;
       margin: 0 auto;
-    }
-    .info-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: var(--radius);
-      padding: 28px 26px;
+      overflow: hidden;
+    }
+    .info-row {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 16px;
-      transition: border-color var(--transition), transform var(--transition);
+      padding: 22px 28px;
+      border-bottom: 1px solid var(--card-border);
+      transition: background var(--transition);
     }
-    .info-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-    }
+    .info-row:last-child { border-bottom: none; }
+    .info-row:hover { background: rgba(26,61,110,0.04); }
     .info-icon {
       width: 46px; height: 46px;
       background: linear-gradient(135deg, rgba(0,180,216,0.2), rgba(33,86,160,0.2));
@@ -612,43 +609,43 @@
       <h2 class="section-title">公司基本資訊</h2>
       <div class="section-divider"></div>
     </div>
-    <div class="info-grid">
-      <div class="info-card reveal delay-1">
+    <div class="info-panel reveal delay-1">
+      <div class="info-row">
         <div class="info-icon">🏢</div>
         <div>
           <div class="info-label">公司名稱</div>
           <div class="info-value">力承科技有限公司</div>
         </div>
       </div>
-      <div class="info-card reveal delay-2">
+      <div class="info-row">
         <div class="info-icon">🌐</div>
         <div>
           <div class="info-label">英文名稱</div>
           <div class="info-value">LI CHENG TEMPO PRINTING CO., LTD.</div>
         </div>
       </div>
-      <div class="info-card reveal delay-3">
+      <div class="info-row">
         <div class="info-icon">🔢</div>
         <div>
           <div class="info-label">統一編號</div>
           <div class="info-value">54582881</div>
         </div>
       </div>
-      <div class="info-card reveal delay-4">
+      <div class="info-row">
         <div class="info-icon">📍</div>
         <div>
           <div class="info-label">公司地址</div>
           <div class="info-value">臺中市神岡區豐洲路611之2號</div>
         </div>
       </div>
-      <div class="info-card reveal delay-5">
+      <div class="info-row">
         <div class="info-icon">🏭</div>
         <div>
           <div class="info-label">產業類別</div>
           <div class="info-value">印刷科技・數位輸出</div>
         </div>
       </div>
-      <div class="info-card reveal delay-6">
+      <div class="info-row">
         <div class="info-icon">📋</div>
         <div>
           <div class="info-label">公司組織</div>
